@@ -15,9 +15,10 @@ require_relative 'git'
 
     case choice
     when 1 
-        puts 'Enter a git command'
+        puts 'Enter a git command. COLORIZE(:green)
         puts ' '
-        puts_git(gets.strip)
+        git.puts_git(gets.strip)
+        menu
     when 2 Exit
 
 end
